@@ -110,10 +110,12 @@ body {
   flex-direction: column;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
 }
 
 .blog-info {
   margin: 20px 5px;
+  margin-bottom: 100px;
 }
 
 .blog-tag {
@@ -258,4 +260,68 @@ h1 {
 }
 
 
-  
+
+
+/* Update the styles for the buttons */
+.button-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+margin-bottom: 10px;
+position: absolute;
+bottom: 0;
+/* width: 100%; */
+}
+
+.btn-read-more {
+flex-grow: 1; /* Allow the button to take available space */
+border-radius: 10px;
+margin-right: 5px; /* Adjust margin for better spacing */
+margin-bottom: 10px; /* Adjust margin for better spacing */
+}
+
+.btn-delete {
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px 20px;
+border: 1px solid #e3d5cc;
+cursor: pointer;
+border-radius: 10px;
+font-size: 18px;
+font-weight: bold;
+color: rgb(77, 72, 72);
+background-color: #e3d5cc;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+margin-bottom: 10px; /* Adjust margin for better spacing */
+}
+
+.btn-delete:hover {
+background-color: #b89c8a;
+color: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Existing styles */
+
+/* Add this media query for responsiveness */
+@media (max-width: 767px) {
+.btn-read-more {
+  font-size: 14px; /* Adjust the font size for smaller screens */
+}
+
+.btn-delete {
+  font-size: 16px; /* Adjust the font size for smaller screens */
+  padding: 8px 15px; /* Adjust padding for better spacing */
+}
+
+.button-container {
+  flex-direction: row; /* Stack buttons vertically on smaller screens */
+  align-items: center;
+  justify-content: center; 
+  /* Align buttons to the start on smaller screens */
+}
+}
+
