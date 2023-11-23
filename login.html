@@ -15,7 +15,7 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/auth.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
   </head>
 
   <body>
@@ -43,31 +43,37 @@
       </div>
     </nav>
     <div class="container-inner">
-      <div>
-        <h1 class="title">User Login</h1>
-      </div>
-
-      <div class="form">
-        <form action="/login" method="post">
-          <input
-            type="text"
-            name="email"
-            placeholder="Enter your email...."
-            autocomplete="off"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Enter your password"
-            autocomplete="off"
-          />
-          <div class="btn">
-            <button type="submit" name="submit" class="btn-red">Login</button>
+      <h1 class="title">Login</h1>
+      <div class="contact-card">
+        <form class="contact-form" action="/login" method="post">
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="johndoe@gmail.com"
+              class="form-control"
+              required
+            />
           </div>
+
+          <div class="form-group">
+            <label for="name">Your Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="*********"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-red">Login</button>
         </form>
       </div>
     </div>
-
     <div class="footer">
       <p>Made with 🤍 by Akatsuki</p>
     </div>
