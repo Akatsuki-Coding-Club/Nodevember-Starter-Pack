@@ -1,4 +1,3 @@
-/* Common styles for all screen sizes */
 * {
   margin: 0;
   padding: 0;
@@ -18,43 +17,43 @@ body {
 }
 
 .navbar-brand {
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 18px; 
 }
 
 .navbar-toggle {
-  background-color: #fff; /* Background color of the hamburger icon */
+  background-color: #fff; 
 }
 
 .navbar-toggle .icon-bar {
-  background-color: #333; /* Color of the hamburger icon bars */
+  background-color: #333; 
 }
 
 .navbar-nav {
-  text-align: center; /* Center-align the navigation links on mobile */
+  text-align: center; 
 }
 
 .navbar-nav > li {
   display: inline-block;
-  float: none; /* Reset the float property */
+  float: none; 
 }
 
 .navbar-nav > li > a {
-  padding: 10px 15px; /* Adjust padding as needed */
+  padding: 10px 15px; 
 }
 
 .navbar-collapse {
-  text-align: center; /* Center-align the navigation links on mobile */
+  text-align: center; 
 }
 
 .navbar-collapse.in {
-  overflow-y: auto; /* Add scrolling for small screens */
+  overflow-y: auto; 
 }
 
-/* Media query for screens smaller than 768px (typical mobile devices) */
+
 @media (max-width: 767px) {
   .navbar-nav {
     display: block;
-    text-align: left; /* Align the navigation links to the left on mobile */
+    text-align: left; 
   }
 
   .navbar-nav > li {
@@ -62,7 +61,7 @@ body {
   }
 
   .navbar-collapse {
-    text-align: left; /* Align the navigation links to the left on mobile */
+    text-align: left; 
   }
 
   .navbar-collapse.collapse {
@@ -103,7 +102,7 @@ body {
 .card {
   background-color: #ffffff;
   width: 100%;
-  max-width: 400px; /* Adjust the max-width as needed */
+  max-width: 400px; 
   margin: 1rem;
   padding: 1rem;
   display: flex;
@@ -121,19 +120,19 @@ body {
 .blog-tag {
   color: #1faa59;
   font-size: 1.5rem;
-  background-color: #fff; /* Background color for contrast */
-  padding: 0.2rem 0.5rem; /* Adjust padding for better spacing */
-  border-radius: 5px; /* Add rounded corners for a softer look */
-  display: inline-block; /* Ensure the tag appears inline */
-  margin-bottom: 0.5rem; /* Adjust margin for spacing */
-  font-weight: bold; /* Emphasize the text */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  background-color: #fff; 
+  padding: 0.2rem 0.5rem; 
+  border-radius: 5px; 
+  display: inline-block; 
+  margin-bottom: 0.5rem; 
+  font-weight: bold; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; 
 }
 
 .blog-tag:hover {
-  background-color: #1faa59; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  background-color: #1faa59; 
+  color: #fff; 
 }
 
 .blog-name {
@@ -157,14 +156,14 @@ body {
   font-weight: bold;
   color: rgb(77, 72, 72);
   background-color: #e3d5cc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .btn-red:hover {
   background-color: #b89c8a;
   color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .image {
@@ -193,7 +192,7 @@ h1 {
 }
 
 .footer {
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto; 
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -214,7 +213,7 @@ h1 {
   position: fixed;
   bottom: 50px;
   right: 115px;
-  z-index: 9999; /* Set a high z-index value to keep the button above other elements */
+  z-index: 9999; 
   margin-bottom: 50px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -242,8 +241,8 @@ h1 {
 
 @media (max-width: 767px) {
   .card {
-    width: 80%; /* Full width for cards on mobile devices */
-    max-width: none; /* Remove max-width on mobile */
+    width: 80%; 
+    max-width: none; 
   }
 
   .image {
@@ -260,9 +259,6 @@ h1 {
 }
 
 
-
-
-/* Update the styles for the buttons */
 .button-container {
 display: flex;
 justify-content: space-between;
@@ -271,14 +267,13 @@ margin-top: 10px;
 margin-bottom: 10px;
 position: absolute;
 bottom: 0;
-/* width: 100%; */
 }
 
 .btn-read-more {
-flex-grow: 1; /* Allow the button to take available space */
+flex-grow: 1; 
 border-radius: 10px;
-margin-right: 5px; /* Adjust margin for better spacing */
-margin-bottom: 10px; /* Adjust margin for better spacing */
+margin-right: 5px; 
+margin-bottom: 10px; 
 }
 
 .btn-delete {
@@ -294,7 +289,7 @@ color: rgb(77, 72, 72);
 background-color: #e3d5cc;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-margin-bottom: 10px; /* Adjust margin for better spacing */
+margin-bottom: 10px;
 }
 
 .btn-delete:hover {
@@ -303,25 +298,20 @@ color: white;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Existing styles */
-
-/* Add this media query for responsiveness */
 @media (max-width: 767px) {
 .btn-read-more {
-  font-size: 14px; /* Adjust the font size for smaller screens */
+  font-size: 14px; 
 }
 
 .btn-delete {
-  font-size: 16px; /* Adjust the font size for smaller screens */
-  padding: 8px 15px; /* Adjust padding for better spacing */
+  font-size: 16px; 
+  padding: 8px 15px; 
 }
 
 .button-container {
-  flex-direction: row; /* Stack buttons vertically on smaller screens */
+  flex-direction: row; 
   align-items: center;
   justify-content: center; 
-  /* Align buttons to the start on smaller screens */
 }
 }
 
